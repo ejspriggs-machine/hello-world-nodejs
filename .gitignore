@@ -2,3 +2,4 @@ node_modules/
 .env
 *.log
 setup_github.sh
+setup_aws.sh
