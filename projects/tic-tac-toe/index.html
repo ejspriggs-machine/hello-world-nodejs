@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Two</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      min-height: 100vh; margin: 0; background: #fdf4ff; color: #701a75;
-    }
-    .card {
-      background: white; border-radius: 12px; padding: 48px 64px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08); text-align: center; max-width: 480px;
-    }
-    h1 { font-size: 2.25rem; margin: 0 0 12px; }
-    p { color: #475569; margin: 0 0 24px; line-height: 1.5; }
-    a { color: #c026d3; text-decoration: none; font-weight: 600; }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
 </head>
 <body>
-  <div class="card">
-    <h1>Project Two 🎨</h1>
-    <p>This is a placeholder. It proves the structure scales: a second independent
-       project, served at <code>/project-two/</code>, with zero changes to the first.</p>
-    <a href="/">&larr; Back to portfolio</a>
-  </div>
+    <div class="board" id="board-id">
+        <div class="cell" id="cell0"></div>
+        <div class="cell" id="cell1"></div>
+        <div class="cell" id="cell2"></div>
+        <div class="cell" id="cell3"></div>
+        <div class="cell" id="cell4"></div>
+        <div class="cell" id="cell5"></div>
+        <div class="cell" id="cell6"></div>
+        <div class="cell" id="cell7"></div>
+        <div class="cell" id="cell8"></div>
+    </div>
+    <div id="modal-background">
+        <div id="modal-window">
+            <section id="choose-glyph">
+                Choose your glyph below.  There are various conventions for the
+                relationship between glyph and play order.  This implementation
+                uses the one familiar to the author from his youth, where the user
+                of the "cross" glyph plays first.
+                <div class="glyphs">
+                    <img src="cross-blue-100-100.svg" alt="cross glyph" width="100" height="100" id="choose-cross">
+                    <img src="nought-red-100-100.svg" alt="nought glyph" width="100" height="100" id="choose-nought">
+                </div>
+            </section>
+            <section id="player-win">
+                You win!
+            </section>
+            <section id="player-loss">
+                You lose.
+            </section>
+            <section id="tie-game">
+                Cat's game.
+            </section>
+            <section id="play-again">
+                <button id="play-again-button" type="button">Play again!</button>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
