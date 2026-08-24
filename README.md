@@ -54,3 +54,12 @@ Pushing to `main` triggers
 app and deploys it to AWS Elastic Beanstalk. AWS credentials are supplied as
 GitHub Actions secrets (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`) — no
 credentials are ever committed to the repository.
+
+## License
+
+[MIT](LICENSE) — © Edward Spriggs.
+
+This covers the whole repository, including subprojects migrated here from
+earlier personal repositories. Those originals were published under other terms
+(the `tic-tac-toe` game was previously GPL-3.0); as their sole author, the
+copyright holder has relicensed the copies in this repository under MIT.
